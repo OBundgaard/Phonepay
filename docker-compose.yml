@@ -1,0 +1,68 @@
+services:
+    transaction-service:
+        container_name: transaction-service
+        restart: always
+        build:
+            context: .
+            dockerfile: Phonepay.Infrastructure/TransactionService/Dockerfile
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_HTTP_PORTS=5000
+        ports:
+            - "5000:5000"
+            - "5001:5001"
+        depends_on:
+            - transaction-database
+            - api-gateway
+        networks:
+            - phonepay-network
+
+    user-service:
+        container_name: user-service
+        restart: always
+        build:
+            context: .
+            dockerfile: Phonepay.Infrastructure/UserService/Dockerfile
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_HTTP_PORTS=5000
+        ports:
+            - "5002:5000"
+            - "5003:5001"
+        depends_on:
+            - user-database
+            - api-gateway
+        networks:
+            - phonepay-network
+
+    transaction-database:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        container_name: transaction-database
+        restart: always
+        environment:
+            SA_PASSWORD: iLuvTransactions4ever<3
+            ACCEPT_EULA: "Y"
+        ports:
+            - "1401:1433"
+        volumes:
+            - ./data/transactiondb:/var/opt/mssql/data
+        networks:
+            - phonepay-network
+
+    user-database:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        container_name: user-database
+        restart: always
+        environment:
+            SA_PASSWORD: iLuvUsers4ever<3
+            ACCEPT_EULA: "Y"
+        ports:
+            - "1402:1433"
+        volumes:
+            - ./data/userdb:/var/opt/mssql/data
+        networks:
+            - phonepay-network
+
+networks:
+    phonepay-network:
+        driver: bridge
