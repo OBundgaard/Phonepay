@@ -2,7 +2,7 @@
 
 namespace Phonepay.Core.Interfaces;
 
-public interface IRepository<T>
+public interface IBaseRepository<T>
 {
     Task<T> Post(T entry);
     Task<T?> Get(int id);
