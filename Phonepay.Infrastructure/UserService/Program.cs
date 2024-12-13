@@ -1,9 +1,9 @@
 
 using Microsoft.EntityFrameworkCore;
-using TransactionService.Contexts;
-using TransactionService.Repositories;
+using UserService.Contexts;
+using UserService.Repositories;
 
-namespace TransactionService
+namespace UserService
 {
     public class Program
     {
@@ -22,10 +22,11 @@ namespace TransactionService
                     });
             });
 
-            builder.Services.AddTransient<TransactionRepository>();
-            builder.Services.AddTransient<TransactionRequestRepository>();
+            builder.Services.AddTransient<UserRepository>();
+            builder.Services.AddTransient<FriendshipRepository>();
+            builder.Services.AddTransient<FriendRequestRepository>();
 
-            builder.Services.AddDbContext<TransactionDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("TransactionServiceConnection"), sqlOptions =>
+            builder.Services.AddDbContext<UserDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("UserServiceConnection"), sqlOptions =>
             {
                 sqlOptions.EnableRetryOnFailure(
                     maxRetryCount: 5,

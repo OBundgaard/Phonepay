@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonepay.Core", "Phonepay.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionService", "Phonepay.Infrastructure\TransactionService\TransactionService.csproj", "{A21CAFE7-3F21-4D8A-96D3-E9059E36D01C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService", "Phonepay.Infrastructure\UserService\UserService.csproj", "{960B3DED-725E-4203-8D72-D5E402D2A270}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A21CAFE7-3F21-4D8A-96D3-E9059E36D01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A21CAFE7-3F21-4D8A-96D3-E9059E36D01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A21CAFE7-3F21-4D8A-96D3-E9059E36D01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{960B3DED-725E-4203-8D72-D5E402D2A270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{960B3DED-725E-4203-8D72-D5E402D2A270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{960B3DED-725E-4203-8D72-D5E402D2A270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{960B3DED-725E-4203-8D72-D5E402D2A270}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
