@@ -58,8 +58,14 @@ public class TransactionRequestRepository : IRepositoryById<TransactionRequest>
         return await retryPolicy.ExecuteAsync(async () =>
         {
             // Update, save, and return
-            var transactionRequest = db.TransactionRequests.Update(entry).Entity;
-            await db.SaveChangesAsync();
+            var transactionRequest = await db.TransactionRequests.FindAsync(entry.ID);
+
+            transactionRequest!.SenderID = entry.SenderID;
+            transactionRequest.ReceiverID = entry.ReceiverID;
+            transactionRequest.Currency = entry.Currency;
+            transactionRequest.Amount = entry.Amount;
+            transactionRequest.SentAt = entry.SentAt;
+
             return transactionRequest;
         });
     }

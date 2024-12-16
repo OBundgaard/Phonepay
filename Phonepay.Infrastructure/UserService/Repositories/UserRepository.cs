@@ -47,7 +47,12 @@ public class UserRepository : IBaseRepository<User>
         return await retryPolicy.ExecuteAsync(async () =>
         {
             // Update, save, and return
-            var user = db.Users.Update(entry).Entity;
+            var user = await db.Users.FindAsync(entry);
+
+            user!.PhoneNumber = entry.PhoneNumber;
+            user.Name = entry.Name;
+            user.CreatedDate = entry.CreatedDate;
+
             await db.SaveChangesAsync();
             return user;
         });

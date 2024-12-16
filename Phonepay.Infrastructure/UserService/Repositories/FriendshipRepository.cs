@@ -59,7 +59,12 @@ public class FriendshipRepository : IRepositoryById<Friendship>
         return await retryPolicy.ExecuteAsync(async () =>
         {
             // Update, save, and return
-            var friendship = db.Friendships.Update(entry).Entity;
+            var friendship = await db.Friendships.FindAsync(entry);
+
+            friendship!.UserID = entry.UserID;
+            friendship!.FriendID = entry.FriendID;
+            friendship.CreatedAt = entry.CreatedAt;
+
             await db.SaveChangesAsync();
             return friendship;
         });
