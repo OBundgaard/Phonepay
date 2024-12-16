@@ -1,5 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
+using Phonepay.Core.Interfaces;
+using Phonepay.Core.Models;
 using TransactionService.Contexts;
 using TransactionService.Repositories;
 
@@ -22,8 +24,8 @@ namespace TransactionService
                     });
             });
 
-            builder.Services.AddTransient<TransactionRepository>();
-            builder.Services.AddTransient<TransactionRequestRepository>();
+            builder.Services.AddScoped<IRepositoryById<Transaction>,TransactionRepository>();
+            builder.Services.AddScoped<IRepositoryById<TransactionRequest>,TransactionRequestRepository>();
 
             builder.Services.AddDbContext<TransactionDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("TransactionServiceConnection"), sqlOptions =>
             {

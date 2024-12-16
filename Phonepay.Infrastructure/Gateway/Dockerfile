@@ -12,19 +12,19 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["Yarp.Gateway/Yarp.Gateway.csproj", "Yarp.Gateway/"]
-RUN dotnet restore "./Yarp.Gateway/Yarp.Gateway.csproj"
+COPY ["Phonepay.Infrastructure/Gateway/Gateway.csproj", "Phonepay.Infrastructure/Gateway/"]
+RUN dotnet restore "./Phonepay.Infrastructure/Gateway/Gateway.csproj"
 COPY . .
-WORKDIR "/src/Yarp.Gateway"
-RUN dotnet build "./Yarp.Gateway.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/Phonepay.Infrastructure/Gateway"
+RUN dotnet build "./Gateway.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./Yarp.Gateway.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Gateway.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Yarp.Gateway.dll"]
+ENTRYPOINT ["dotnet", "Gateway.dll"]
