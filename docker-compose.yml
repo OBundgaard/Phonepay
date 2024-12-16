@@ -8,9 +8,10 @@ services:
             dockerfile: Phonepay.Infrastructure/Gateway/Dockerfile
         environment:
             - ASPNETCORE_ENVIRONMENT=Development
-            - ASPNETCORE_HTTP_PORTS=80
+            - ASPNETCORE_HTTP_PORTS=8080
         ports:
-            - "8082:80"
+            - "8081:8080"
+            - "8082:8081"
         networks:
             - phonepay-network
             - default
