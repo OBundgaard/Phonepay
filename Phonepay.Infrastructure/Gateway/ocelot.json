@@ -11,7 +11,14 @@
           "Host": "transaction-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/Transaction/get/{id}",
@@ -23,7 +30,14 @@
           "Host": "transaction-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/Transaction/getall/{userId}",
@@ -35,7 +49,14 @@
           "Host": "transaction-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/Transaction/put/{id}",
@@ -47,7 +68,14 @@
           "Host": "transaction-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/Transaction/delete/{id}",
@@ -59,7 +87,14 @@
           "Host": "transaction-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     //Transctions End
 
@@ -74,7 +109,14 @@
           "Host": "transaction-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/TransactionRequests/get/{id}",
@@ -86,7 +128,14 @@
           "Host": "transaction-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/TransactionRequests/getall/{id}",
@@ -98,7 +147,14 @@
           "Host": "transaction-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/TransactionRequests/put/{id}",
@@ -110,7 +166,14 @@
           "Host": "transaction-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/TransactionRequests/put/{id}",
@@ -122,7 +185,14 @@
           "Host": "transaction-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     //TransactionsRequests End
 
@@ -137,7 +207,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/FriendRequest/get/{id}",
@@ -149,7 +226,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/FriendRequest/getall/{userId}",
@@ -161,7 +245,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/FriendRequest/put/{id}",
@@ -173,7 +264,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/FriendRequest/delete/{id}",
@@ -185,7 +283,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     //FriendRequests End
 
@@ -200,7 +305,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/Friendship/get/{id}",
@@ -212,7 +324,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/Friendship/getall/{userId}",
@@ -224,7 +343,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/Friendship/put/{id}",
@@ -236,7 +362,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/Friendship/delete/{id}",
@@ -248,7 +381,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     //Friends End
 
@@ -263,7 +403,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/User/get/{id}",
@@ -275,7 +422,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/User/put/{id}",
@@ -287,7 +441,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     },
     {
       "UpstreamPathTemplate": "/api/User/delete/{id}",
@@ -299,7 +460,14 @@
           "Host": "user-service",
           "Port": 5000
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [], 
+        "EnableRateLimiting": true,
+        "Period": "1s", 
+        "PeriodTimespan": 1,
+        "Limit": 1
+      }
     }
     //Users End
   ]
