@@ -59,7 +59,12 @@ public class FriendRequestRepository : IRepositoryById<FriendRequest>
         return await retryPolicy.ExecuteAsync(async () =>
         {
             // Update, save, and return
-            var friendRequest = db.FriendRequests.Update(entry).Entity;
+            var friendRequest = await db.FriendRequests.FindAsync(entry);
+
+            friendRequest!.SenderID = entry.SenderID;
+            friendRequest!.ReceiverID = entry.ReceiverID;
+            friendRequest.SentAt = entry.SentAt;
+
             await db.SaveChangesAsync();
             return friendRequest;
         });
