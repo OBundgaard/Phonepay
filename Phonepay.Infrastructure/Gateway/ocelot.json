@@ -10,8 +10,15 @@
         {
           "Host": "transaction-service",
           "Port": 5000
+        },
+        {
+          "Host": "transaction-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
         "ClientWhitelist": [], 
         "EnableRateLimiting": true,
@@ -29,12 +36,19 @@
         {
           "Host": "transaction-service",
           "Port": 5000
+        },
+        {
+          "Host": "transaction-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -48,12 +62,19 @@
         {
           "Host": "transaction-service",
           "Port": 5000
+        },
+        {
+          "Host": "transaction-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -67,12 +88,19 @@
         {
           "Host": "transaction-service",
           "Port": 5000
+        },
+        {
+          "Host": "transaction-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -86,12 +114,19 @@
         {
           "Host": "transaction-service",
           "Port": 5000
+        },
+        {
+          "Host": "transaction-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -108,12 +143,19 @@
         {
           "Host": "transaction-service",
           "Port": 5000
+        },
+        {
+          "Host": "transaction-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -127,12 +169,19 @@
         {
           "Host": "transaction-service",
           "Port": 5000
+        },
+        {
+          "Host": "transaction-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -146,12 +195,19 @@
         {
           "Host": "transaction-service",
           "Port": 5000
+        },
+        {
+          "Host": "transaction-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -165,12 +221,19 @@
         {
           "Host": "transaction-service",
           "Port": 5000
+        },
+        {
+          "Host": "transaction-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -184,12 +247,19 @@
         {
           "Host": "transaction-service",
           "Port": 5000
+        },
+        {
+          "Host": "transaction-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -206,12 +276,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -225,12 +302,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -244,12 +328,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -263,12 +354,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -282,12 +380,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -304,12 +409,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -323,12 +435,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -342,12 +461,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -361,12 +487,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -380,12 +513,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -402,12 +542,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -421,12 +568,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -440,12 +594,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
@@ -459,12 +620,19 @@
         {
           "Host": "user-service",
           "Port": 5000
+        },
+        {
+          "Host": "user-two-service",
+          "Port": 5000
         }
       ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
       }
