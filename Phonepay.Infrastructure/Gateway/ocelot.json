@@ -20,11 +20,15 @@
         "Type": "RoundRobin"
       },
       "RateLimitOptions": {
-        "ClientWhitelist": [], 
+        "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "1s", 
+        "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "transaction.write" ]
       }
     },
     {
@@ -51,6 +55,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "transaction.read" ]
       }
     },
     {
@@ -77,6 +85,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "transaction.read" ]
       }
     },
     {
@@ -103,6 +115,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "transaction.write" ]
       }
     },
     {
@@ -129,6 +145,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "transaction.write" ]
       }
     },
     //Transctions End
@@ -158,6 +178,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "transaction.write" ]
       }
     },
     {
@@ -184,6 +208,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "transaction.read" ]
       }
     },
     {
@@ -210,6 +238,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "transaction.read" ]
       }
     },
     {
@@ -236,6 +268,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "transaction.write" ]
       }
     },
     {
@@ -262,6 +298,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "transaction.write" ]
       }
     },
     //TransactionsRequests End
@@ -291,6 +331,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.write" ]
       }
     },
     {
@@ -317,6 +361,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.read" ]
       }
     },
     {
@@ -343,6 +391,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.read" ]
       }
     },
     {
@@ -369,6 +421,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.write" ]
       }
     },
     {
@@ -395,6 +451,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.write" ]
       }
     },
     //FriendRequests End
@@ -424,6 +484,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.write" ]
       }
     },
     {
@@ -450,6 +514,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.read" ]
       }
     },
     {
@@ -476,6 +544,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.read" ]
       }
     },
     {
@@ -502,6 +574,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.write" ]
       }
     },
     {
@@ -528,6 +604,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.write" ]
       }
     },
     //Friends End
@@ -557,6 +637,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.write" ]
       }
     },
     {
@@ -583,6 +667,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.read" ]
       }
     },
     {
@@ -609,6 +697,10 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.write" ]
       }
     },
     {
@@ -635,8 +727,27 @@
         "Period": "1s",
         "PeriodTimespan": 1,
         "Limit": 1
+      },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": [ "user.write" ]
       }
-    }
+    },
     //Users End
+
+    //Authentication Start
+    {
+      "UpstreamPathTemplate": "/auth",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/Authservice",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "auth-service",
+          "Port": 8080
+        }
+      ]
+    }
+    //Authentication End
   ]
 }

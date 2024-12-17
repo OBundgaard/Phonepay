@@ -16,6 +16,20 @@ services:
             - phonepay-network
             - default
 
+    auth-service:
+        container_name: auth-service
+        restart: always
+        build: 
+            context: .
+            dockerfile: Phonepay.Infrastructure/AuthService/Dockerfile
+        ports:
+            - "8083:8080"
+        #depends:
+        #    - api-gateway
+        networks:
+            - phonepay-network
+
+
     transaction-service:
         container_name: transaction-service
         restart: always
