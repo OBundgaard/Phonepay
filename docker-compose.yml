@@ -34,6 +34,24 @@ services:
         networks:
             - phonepay-network
 
+    transaction-two-service:
+        container_name: transaction-two-service
+        restart: always
+        build:
+            context: .
+            dockerfile: Phonepay.Infrastructure/TransactionService/Dockerfile
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_HTTP_PORTS=5000
+        ports:
+            - "5004:5000"
+            - "5005:5001"
+        depends_on:
+            - transaction-database
+            - api-gateway
+        networks:
+            - phonepay-network
+
     user-service:
         container_name: user-service
         restart: always
@@ -46,6 +64,24 @@ services:
         ports:
             - "5002:5000"
             - "5003:5001"
+        depends_on:
+            - user-database
+            - api-gateway
+        networks:
+            - phonepay-network
+
+    user-two-service:
+        container_name: user-two-service
+        restart: always
+        build:
+            context: .
+            dockerfile: Phonepay.Infrastructure/UserService/Dockerfile
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_HTTP_PORTS=5000
+        ports:
+            - "5006:5000"
+            - "5007:5001"
         depends_on:
             - user-database
             - api-gateway

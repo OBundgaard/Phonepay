@@ -1,5 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
+using Phonepay.Core.Interfaces;
+using Phonepay.Core.Models;
 using UserService.Contexts;
 using UserService.Repositories;
 
@@ -22,9 +24,9 @@ namespace UserService
                     });
             });
 
-            builder.Services.AddTransient<UserRepository>();
-            builder.Services.AddTransient<FriendshipRepository>();
-            builder.Services.AddTransient<FriendRequestRepository>();
+            builder.Services.AddScoped<IBaseRepository<User>, UserRepository>();
+            builder.Services.AddScoped<IRepositoryById<Friendship>, FriendshipRepository>();
+            builder.Services.AddScoped<IRepositoryById<FriendRequest>, FriendRequestRepository>();
 
             builder.Services.AddDbContext<UserDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("UserServiceConnection"), sqlOptions =>
             {
